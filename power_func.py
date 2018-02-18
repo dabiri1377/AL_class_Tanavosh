@@ -35,6 +35,20 @@ def powerset(input_list, print_set=False):
     return output_list
 
 
-test_list = (1, 2, 3, 4)
+# __main__
 
-powerset(test_list)
+
+# get set from user
+input_list_set = input('Enter input set\n').split()
+
+# ask for print powerset
+powerset_print = input('Do you want to print powerset?')
+if powerset_print == 'no' or powerset_print == 'n':
+    powerset_print = 0
+
+# exception handling
+try:
+    powerset(input_list_set, powerset_print)
+except Exception:
+    print("something wrong")
+    print(Exception)
