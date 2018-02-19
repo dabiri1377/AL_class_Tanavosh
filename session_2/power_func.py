@@ -14,15 +14,23 @@ def powerset(input_list, print_set=False):
     for list_member in input_list:
 
         temp_list = []  # create a empty temp list
+        # for_debug
+        print("list_member =", list_member)
 
         # scan every member of output list
-        for sub_moh in output_list:
+        for sub_list in output_list:
             # Add list_member into every output_list member and add \
             # it to temp list
-            temp_list += [sub_moh + [list_member]]
+            temp_list += [sub_list + [list_member]]
+            # for_debug
+            print("sub_list =", sub_list)
+            print("temp_list =", temp_list)
 
         # add temp list to output list
         output_list.extend(temp_list)
+        # for_debug
+        print("output_list = ",output_list)
+        print()
 
     # sort output list with python sort func.
     output_list.sort()
