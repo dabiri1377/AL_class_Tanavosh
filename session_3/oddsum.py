@@ -15,4 +15,7 @@ def odd_sum(min_number, max_number=None):
     return sum_of_odd_number
 
 
+def last_odd_number(number):
+    return 2*(number - 1) // 2 + 1
+
 odd_sum(3)
