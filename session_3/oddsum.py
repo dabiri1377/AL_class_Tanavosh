@@ -1,7 +1,17 @@
 def odd_sum(min_number, max_number=None):
-    if max_number is None:
-        max_number = min_number
-        min_number = 0
+
+    # exception handeling
+    try:
+        if max_number is None:
+            max_number = int(min_number)
+            min_number = int(0)
+        else:
+            max_number = int(max_number)
+            min_number = int(min_number)
+    except Exception:
+        # user input char
+        print("unvalid input")
+        return None
 
     print("min =", min_number)
     print("max= ", max_number)
@@ -16,6 +26,12 @@ def odd_sum(min_number, max_number=None):
 
 
 def last_odd_number(number):
-    return 2*(number - 1) // 2 + 1
+    return 2 * ((number - 1) // 2) + 1
 
-odd_sum(3)
+
+
+
+
+min_n,max_n = input("enter min and max").split()
+odd_sum(min_n, max_n)
+
