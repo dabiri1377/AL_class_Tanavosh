@@ -2,11 +2,11 @@ def powerset(input_list, print_set=False):
     """
      Get a set as a list and output a list as powerset
     :param input_list:
-     input set as a list
+     Input set as a list
     :param print_set:
-     if want to print final powerset this is True
+     If want to print final powerset this is True
     :return:
-    powerset as output list
+    Powerset as output list
     """
     output_list = [[]]  # create a list with [] member(all set's have [] member)
 
@@ -17,7 +17,7 @@ def powerset(input_list, print_set=False):
 
         # scan every member of output list
         for sub_moh in output_list:
-            # add list_member into every output_list member and add \
+            # Add list_member into every output_list member and add \
             # it to temp list
             temp_list += [sub_moh + [list_member]]
 
