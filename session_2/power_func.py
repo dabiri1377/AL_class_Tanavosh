@@ -1,3 +1,4 @@
+# with set
 def powerset(input_set, print_set=False):
     """
      Get a set as a list and output a list as powerset
