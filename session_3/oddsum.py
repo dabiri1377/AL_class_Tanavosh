@@ -1,6 +1,6 @@
 def odd_sum(min_number, max_number=None):
 
-    # exception handeling
+    # exception handling
     try:
         if max_number is None:
             max_number = int(min_number)
@@ -8,9 +8,9 @@ def odd_sum(min_number, max_number=None):
         else:
             max_number = int(max_number)
             min_number = int(min_number)
-    except Exception:
+    except TypeError:
         # user input char
-        print("unvalid input")
+        print("invalid input")
         return None
 
     print("min =", min_number)
