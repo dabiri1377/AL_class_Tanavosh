@@ -1,5 +1,4 @@
 def odd_sum(min_number, max_number=None):
-
     # exception handling
     try:
         if max_number is None:
@@ -29,9 +28,5 @@ def last_odd_number(number):
     return 2 * ((number - 1) // 2) + 1
 
 
-
-
-
-min_n,max_n = input("enter min and max").split()
+min_n, max_n = input("enter min and max").split()
 odd_sum(min_n, max_n)
-
