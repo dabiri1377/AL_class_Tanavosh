@@ -8,7 +8,7 @@ def odd_sum(min_number, max_number=None):
         else:
             max_number = int(max_number)
             min_number = int(min_number)
-    except TypeError:
+    except Exception:
         # user input char
         print("invalid input")
         return None
